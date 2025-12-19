@@ -5,12 +5,6 @@ export function Design() {
   return (
     <section id="design" className="py-32 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-20">
-          <h2 className="text-6xl md:text-7xl mb-6 text-gray-900">Design</h2>
-          <p className="text-2xl text-gray-600 max-w-3xl">
-            I begin every project by designing optimized layouts and systems
-          </p>
-        </div>
 
         <div className="grid md:grid-cols-12 gap-8 mb-12">
           {/* Primary Image Panel */}

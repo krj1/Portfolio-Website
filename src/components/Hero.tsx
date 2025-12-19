@@ -2,6 +2,18 @@ import { ChevronDown } from 'lucide-react';
 import mainHero from '../../images/Main-Hero.jpeg';
 
 export function Hero() {
+  const handleScrollDown = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const heroSection = document.getElementById('home');
+    if (heroSection) {
+      const scrollPosition = heroSection.offsetTop + heroSection.offsetHeight;
+      
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
     <section id="home" className="relative h-screen flex items-center justify-center">
       <div className="absolute inset-0 z-0">
@@ -136,7 +148,8 @@ export function Hero() {
 
       <a
         href="#design"
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white animate-bounce"
+        onClick={handleScrollDown}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white animate-bounce cursor-pointer hover:opacity-80 transition-opacity"
       >
         <ChevronDown size={40} />
       </a>

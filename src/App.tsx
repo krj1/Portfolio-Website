@@ -1,4 +1,6 @@
 import { Hero } from './components/Hero';
+import { Banner } from './components/Banner';
+import { ScrollingBanner } from './components/ScrollingBanner';
 import { Design } from './components/Design';
 import { Manufacturing } from './components/Manufacturing';
 import { Integration } from './components/Integration';
@@ -11,6 +13,8 @@ export default function App() {
     <div className="min-h-screen bg-white">
       <Header />
       <Hero />
+      <ScrollingBanner />
+      <Banner />
       <Design />
       <Manufacturing />
       <Integration />
