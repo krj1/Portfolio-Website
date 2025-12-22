@@ -15,8 +15,8 @@ export function ScrollingBanner() {
     return () => clearTimeout(timer);
   }, []);
 
-  const text = "Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manufacturing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support";
-  const repeatedText = `${text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.repeat(5); // Repeat the text to create a seamless loop
+  const text = "Design&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manufacturing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Integration&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support";
+  const repeatedText = `${text}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.repeat(5); // Repeat the text to create a seamless loop
 
   return (
     <div className="scrolling-banner">
@@ -26,7 +26,7 @@ export function ScrollingBanner() {
           animation: 'scroll 60s linear infinite',
         }}
       >
-        <div dangerouslySetInnerHTML={{ __html: repeatedText }} style={{ letterSpacing: '0.5em' }} />
+        <div dangerouslySetInnerHTML={{ __html: repeatedText }} style={{ letterSpacing: '0.4em' }} />
       </div>
     </div>
   );

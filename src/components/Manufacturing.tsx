@@ -3,8 +3,8 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export function Manufacturing() {
   return (
-    <section id="manufacturing" className="py-32 bg-gray-50 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="manufacturing" className="pt-48 pb-32 bg-gray-50 relative">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8">
         <div className="mb-20">
           <h2 className="text-6xl md:text-7xl mb-6 text-gray-900">Manufacturing</h2>
           <p className="text-2xl text-gray-600 max-w-3xl">

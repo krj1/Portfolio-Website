@@ -1,12 +1,12 @@
 .scrolling-banner {
   overflow: hidden;
   background-color: white;
-  padding: 5.5rem 0;
+  padding: 4rem 0 0rem;
 }
 
 .scrolling-text {
   white-space: nowrap;
-  font-size: 3.8rem;
+  font-size: 1.5rem;
   line-height: 1.75rem;
   font-weight: 350;
   color: #1f2937;

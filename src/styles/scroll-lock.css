@@ -1,0 +1,42 @@
+/* Smooth scrolling behavior for the entire app */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+/* Design section styles */
+.design-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.design-section.sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* Ensure content below the design section flows correctly */
+#design + * {
+  position: relative;
+  z-index: 2;
+  background: white;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  .design-section {
+    background-attachment: scroll !important;
+  }
+}

@@ -1,12 +1,14 @@
 import { ChevronDown } from 'lucide-react';
 import mainHero from '../../images/Main-Hero.jpeg';
+import { useRef } from 'react';
 
 export function Hero() {
+  const heroRef = useRef<HTMLElement>(null);
+
   const handleScrollDown = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    const heroSection = document.getElementById('home');
-    if (heroSection) {
-      const scrollPosition = heroSection.offsetTop + heroSection.offsetHeight;
+    if (heroRef.current) {
+      const scrollPosition = heroRef.current.offsetTop + heroRef.current.offsetHeight;
       
       window.scrollTo({
         top: scrollPosition,
@@ -15,7 +17,11 @@ export function Hero() {
     }
   };
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center">
+    <section 
+      ref={heroRef}
+      id="home" 
+      className="relative h-screen flex items-center justify-center"
+    >
       <div className="absolute inset-0 z-0">
         <img
           src={mainHero}
@@ -24,10 +30,12 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50"></div>
       </div>
-
+const text = "Design&nbsp"
       <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto h-[500px]">
         <h1 className="text-6xl md:text-8xl mb-0 text-white">Kurt Jackson</h1>
-        <p className="text-2xl md:text-3xl mb-20 text-gray-200">Process Engineer</p>
+        <div className="w-full max-w-6xl mx-auto pl-4 md:pl-8">
+          <p className="text-2xl md:text-3xl mb-20 text-gray-200 text-left" style={{ fontWeight: 100, marginLeft: '0' }}>Making More With Less</p>
+        </div>
         
         <div className="grid grid-cols-3 gap-2 md:gap-12 relative">
           <a 

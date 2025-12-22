@@ -65,7 +65,7 @@ export function Header({ opacity = 1, scrollProgress: initialScrollProgress = 0 
       <div 
         className={`absolute inset-0 transition-all duration-300 ${
           isHeaderSolid ? 'bg-white/90' : 'bg-black/20'
-        } backdrop-blur-md shadow-sm`}
+        } backdrop-blur-md`}
         style={{
           opacity: isHeaderSolid ? bgOpacity : 1,
           backgroundColor: isHeaderSolid ? '' : 'rgba(0, 0, 0, 0.2)'
