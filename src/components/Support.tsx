@@ -16,16 +16,15 @@ export function Support() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-20">
           <h2 className="text-6xl md:text-7xl mb-6 text-gray-900">Support</h2>
-          <p className="text-2xl text-gray-600 max-w-3xl">
-            Finally, I ensure long-term success through project management and risk mitigation
-          </p>
+          
+            
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 gap-8 mb-12" style={{ height: '550px' }}>
           {/* Primary Image Panel */}
           <div className="rounded-3xl overflow-hidden shadow-2xl h-[500px]">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1748256373165-e4d125c5124f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlciUyMHBsYW5uaW5nJTIwd29ya3NwYWNlfGVufDF8fHx8MTc2NTc0MjM0M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src="/images/building.jpeg"
               alt="Engineer planning workspace"
               className="w-full h-full object-cover"
             />
@@ -45,11 +44,6 @@ export function Support() {
               <p className="text-xl text-gray-900">On-Time Delivery</p>
             </div>
             
-            <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 text-center shadow-xl border border-gray-200">
-              <TrendingUp style={{ color: '#FF8854' }} size={48} className="mx-auto mb-4" />
-              <div className="text-6xl mb-2" style={{ color: '#FF8854' }}>100%</div>
-              <p className="text-xl text-gray-900">Completion Rate</p>
-            </div>
           </div>
         </div>
 

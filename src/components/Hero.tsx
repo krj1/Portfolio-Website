@@ -1,5 +1,5 @@
 import { ChevronDown } from 'lucide-react';
-import mainHero from '../../images/Main-Hero.jpeg';
+import mainHero from '../../images/snow.jpeg';
 import { useRef } from 'react';
 
 export function Hero() {
@@ -28,7 +28,7 @@ export function Hero() {
           alt="Kurt Jackson - Process Engineer"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70"></div>
       </div>
 const text = "Design&nbsp"
       <div className="relative z-10 text-center text-white px-4 max-w-6xl mx-auto h-[500px]">
@@ -37,7 +37,9 @@ const text = "Design&nbsp"
           <p className="text-2xl md:text-3xl mb-20 text-gray-200 text-left" style={{ fontWeight: 100, marginLeft: '0' }}>Making More With Less</p>
         </div>
         
+        
         <div className="grid grid-cols-3 gap-2 md:gap-12 relative">
+          {/*
           <a 
             href="#" 
             className="card-hover"
@@ -61,6 +63,7 @@ const text = "Design&nbsp"
                 (textElement as HTMLElement).style.fontSize = '2rem';
               }
             }}
+            
             onMouseOut={(e) => {
               e.currentTarget.style.transform = 'scale(1)';
               e.currentTarget.style.zIndex = 'auto';
@@ -72,8 +75,10 @@ const text = "Design&nbsp"
               }
             }}
           >
+           
             <div style={{ fontSize: '3rem', lineHeight: '1', marginBottom: '0.5rem', color: '#2DEB98' }}>Deploying Capital</div>
             <p style={{ color: 'rgb(229, 231, 235)' }}>$2M per year</p>
+           
           </a>
           
           <a 
@@ -110,8 +115,10 @@ const text = "Design&nbsp"
               }
             }}
           >
+            
             <div style={{ fontSize: '3rem', lineHeight: '1', marginBottom: '0.5rem', color: '#FF8854' }}>Creating Space</div>
             <p style={{ color: 'rgb(229, 231, 235)' }}>Developed 157k sqft</p>
+            
           </a>
           
           <a 
@@ -148,12 +155,15 @@ const text = "Design&nbsp"
               }
             }}
           >
+            
             <div style={{ fontSize: '3rem', lineHeight: '1', marginBottom: '0.5rem', color: '#2DEB98' }}>Improve Processes</div>
             <p style={{ color: 'rgb(229, 231, 235)' }}>Increased production 3x</p>
+            
           </a>
+          */}
         </div>
       </div>
-
+      
       <a
         href="#design"
         onClick={handleScrollDown}

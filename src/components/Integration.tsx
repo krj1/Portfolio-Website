@@ -7,9 +7,6 @@ export function Integration() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-20">
           <h2 className="text-6xl md:text-7xl mb-6 text-gray-900">Integration</h2>
-          <p className="text-2xl text-gray-600 max-w-3xl">
-            I integrate robotics and automation into intelligent production systems
-          </p>
         </div>
 
         <div className="grid md:grid-cols-12 gap-8 mb-12">
@@ -35,7 +32,7 @@ export function Integration() {
           {/* Primary Image Panel */}
           <div className="md:col-span-8 rounded-3xl overflow-hidden shadow-2xl h-[500px]">
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1661882217431-b64b303fb1d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdGljJTIwd29ya2NlbGwlMjBhdXRvbWF0aW9ufGVufDF8fHx8MTc2NTY2NjE2Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src="/images/mess.jpeg"
               alt="Robotic workcell automation"
               className="w-full h-full object-cover"
             />
