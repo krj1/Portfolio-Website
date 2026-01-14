@@ -72,8 +72,8 @@ const text = "Design&nbsp"
               }
             }}
           >
-            <div style={{ fontSize: '3rem', lineHeight: '1', marginBottom: '0.5rem', color: '#2DEB98' }}>157k</div>
-            <p style={{ color: 'rgb(229, 231, 235)' }}>Sq Ft</p>
+            <div style={{ fontSize: '3rem', lineHeight: '1', marginBottom: '0.5rem', color: '#2DEB98' }}>Deploying Capital</div>
+            <p style={{ color: 'rgb(229, 231, 235)' }}>$2M per year</p>
           </a>
           
           <a 
@@ -110,8 +110,8 @@ const text = "Design&nbsp"
               }
             }}
           >
-            <div style={{ fontSize: '3rem', lineHeight: '1', marginBottom: '0.5rem', color: '#FF8854' }}>$30M</div>
-            <p style={{ color: 'rgb(229, 231, 235)' }}>CapEx</p>
+            <div style={{ fontSize: '3rem', lineHeight: '1', marginBottom: '0.5rem', color: '#FF8854' }}>Creating Space</div>
+            <p style={{ color: 'rgb(229, 231, 235)' }}>Developed 157k sqft</p>
           </a>
           
           <a 
@@ -148,8 +148,8 @@ const text = "Design&nbsp"
               }
             }}
           >
-            <div style={{ fontSize: '3rem', lineHeight: '1', marginBottom: '0.5rem', color: '#2DEB98' }}>3x</div>
-            <p style={{ color: 'rgb(229, 231, 235)' }}>Scale</p>
+            <div style={{ fontSize: '3rem', lineHeight: '1', marginBottom: '0.5rem', color: '#2DEB98' }}>Improve Processes</div>
+            <p style={{ color: 'rgb(229, 231, 235)' }}>Increased production 3x</p>
           </a>
         </div>
       </div>
